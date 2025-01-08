@@ -1,0 +1,14 @@
+name: gradlew cleanBuildCache
+
+on: workflow_dispatch
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+    - name: Gradle clean build cache
+      run: ./gradlew cleanBuildCache
