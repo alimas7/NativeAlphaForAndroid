@@ -9,6 +9,7 @@ buildscript {
         jcenter()
         maven {
             url "https://plugins.gradle.org/m2/"
+            url 'https://jitpack.io'
         }
     }
     dependencies {
