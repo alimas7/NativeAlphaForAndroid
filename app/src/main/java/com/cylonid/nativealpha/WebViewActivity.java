@@ -465,6 +465,7 @@ public class WebViewActivity extends AppCompatActivity implements EasyPermission
     }
 
     @Override
+    @SuppressWarnings("MissingSuperCall")
     public void onBackPressed() {
         WebApp webapp = DataManager.getInstance().getWebApp(webappID);
 
