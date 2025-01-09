@@ -148,6 +148,7 @@ dependencies {
 
 }
 def renameManifest = tasks.register("renameManifest") {
+    println fileTree("src/main").filter { it.isFile() }.files.name
     ant.move(file: 'src/main/AndroidManifest.xml', tofile:'src/main/AndroidManifest_original.xml')
 }
 preBuild.dependsOn renameManifest
