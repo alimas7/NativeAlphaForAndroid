@@ -114,6 +114,10 @@ repositories {
     jcenter()
 }
 
+configurations.all {
+    resolutionStrategy.force "junit:junit:4.13.2"
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
