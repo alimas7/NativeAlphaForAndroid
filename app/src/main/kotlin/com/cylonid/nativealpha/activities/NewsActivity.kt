@@ -43,7 +43,7 @@ class NewsActivity : AppCompatActivity(), View.OnTouchListener, ViewTreeObserver
         setButtonState()
     }
 
-    @EmptySuper
+    @Suppress("EmptySuperCall")
     override fun onBackPressed() {}
 
     @SuppressLint("ResourceAsColor")
