@@ -9,7 +9,8 @@ import com.cylonid.nativealpha.activities.NewsActivity
 object EntryPointUtils {
     @JvmStatic
     fun entryPointReached(a: Activity) {
-        if (kotlin.math.abs(DataManager.getLastShownUpdate() - BuildConfig.VERSION_CODE) > 10 ) {
+        val dif: Int = DataManager.getLastShownUpdate() - BuildConfig.VERSION_CODE
+        if (kotlin.math.abs(dif) > 10 ) {
             a.startActivity(Intent(a, NewsActivity::class.java))
         }
         DataManager.getInstance().loadAppData()
