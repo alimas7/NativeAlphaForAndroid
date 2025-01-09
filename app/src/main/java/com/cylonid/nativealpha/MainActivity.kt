@@ -141,8 +141,8 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+    @EmptySuper
     override fun onBackPressed() {
-        super.onBackPressed()
         moveTaskToBack(true)
     }
 
