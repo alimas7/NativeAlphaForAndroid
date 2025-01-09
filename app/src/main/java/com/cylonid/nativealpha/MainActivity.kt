@@ -141,7 +141,7 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
-    @Suppress("EmptySuperCall")
+    @SuppressWarnings("MissingSuperCall")
     override fun onBackPressed() {
         moveTaskToBack(true)
     }
