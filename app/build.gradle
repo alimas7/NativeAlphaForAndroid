@@ -113,7 +113,7 @@ dependencies {
 
     implementation 'com.mikhaellopez:circularprogressbar:3.1.0'
     implementation 'org.jsoup:jsoup:1.14.1'
-    implementation 'org.adblockplus:adblock-android-webview:4.4.0'
+    // implementation 'org.adblockplus:adblock-android-webview:4.4.0'
     implementation 'com.github.ihimanshurawat:Hasher:1.2'
     implementation 'androidx.navigation:navigation-fragment:2.5.2'
     implementation 'androidx.navigation:navigation-ui:2.5.2'
