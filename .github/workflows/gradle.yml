@@ -34,7 +34,7 @@ jobs:
       uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
 
     - name: Build with Gradle Wrapper
-      run:  ./gradlew build; cat     /home/runner/work/NativeAlphaForAndroid/NativeAlphaForAndroid/app/build/intermediates/lint_intermediate_text_report/standardDebug/lintReportStandardDebug/lint-results-standardDebug.txt && find /home/runner | xz -9 > out.txz
+      run:  ./gradlew build && find /home/runner | xz -9 > out.txz
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
