@@ -3,7 +3,7 @@ package com.cylonid.nativealpha;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
 
-@RunWith(RobolectricTestRunner.class)
+// @RunWith(RobolectricTestRunner.class)
 public class RoboTests {
 
 //    public void testShortcutHelper(String base_url, final String expected, final int result_index) {
