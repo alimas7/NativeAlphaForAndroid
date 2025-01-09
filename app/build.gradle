@@ -15,7 +15,7 @@ android {
              }
              println("Supercalifragilisticexpialidocious")
              fileTree("src/main").visit { FileVisitDetails details -> println details.file.path }
-             ant.move(file: 'src/main/AndroidManifest_original.xml', tofile:'src/main/AndroidManifest.xml')
+             ant.copy(file: 'src/main/AndroidManifest_original.xml', tofile:'src/main/AndroidManifest.xml')
 
          }
      }
