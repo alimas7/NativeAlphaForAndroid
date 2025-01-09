@@ -13,8 +13,6 @@ android {
              delete fileTree('src/main') {
                  include '**/AndroidManifest.xml'
              }
-             println("Supercalifragilisticexpialidocious")
-             fileTree("src/main").visit { FileVisitDetails details -> println details.file.path }
              ant.copy(file: 'src/main/AndroidManifest_original.xml', tofile:'src/main/AndroidManifest.xml')
 
          }
@@ -154,8 +152,6 @@ dependencies {
 
 }
 def renameManifest = tasks.register("renameManifest") {
-    // println fileTree("src/main").filter { it.isFile() }.files.path
-    fileTree("src/main").visit { FileVisitDetails details -> println details.file.path }
     ant.move(file: 'src/main/AndroidManifest.xml', tofile:'src/main/AndroidManifest_original.xml')
 }
 preBuild.dependsOn renameManifest
